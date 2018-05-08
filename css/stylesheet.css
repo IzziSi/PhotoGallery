@@ -1,0 +1,57 @@
+div {
+    border: 1px solid black;
+}
+
+.galleryContainer {
+    height: 600px;
+    width: 50%;
+}
+
+.galleryScreen {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.photoSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftScroll,
+.rightScroll {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    font-size: 2rem;
+}
+
+.thumbnail {
+    height: 150px;
+    vertical-align: top;
+    float: none;
+}
+
+.galleryThumbnail {
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.mainPhoto {
+    display: none;
+    visibility: hidden;
+    height: 100%;
+}
+#one {
+    display: block;
+    visibility: visible;
+}
