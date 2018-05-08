@@ -14,7 +14,7 @@ function makeInvisible(i) {
 }
 
 function next() {
-    if (currentPhoto <= images.length) {
+    if (currentPhoto < maxPhotos) {
         makeInvisible(currentPhoto);
         currentPhoto = currentPhoto + 1;
         makeVisible(currentPhoto);
@@ -22,9 +22,15 @@ function next() {
 }
 
 function back() {
-    if (currentPhoto >= 0) {
+    if (currentPhoto > 0) {
         makeInvisible(currentPhoto);
         currentPhoto = currentPhoto - 1;
         makeVisible(currentPhoto);
     }
+}
+
+function jumpToPhoto(i) {
+    makeInvisible(currentPhoto);
+    currentPhoto = i;
+    makeVisible(currentPhoto);
 }

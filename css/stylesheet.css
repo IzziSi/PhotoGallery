@@ -1,10 +1,8 @@
-div {
-    border: 1px solid black;
-}
-
 .galleryContainer {
-    height: 600px;
+    height: 800px;
     width: 50%;
+    background: black;
+    color: lightgray;
 }
 
 .galleryScreen {
@@ -51,7 +49,15 @@ div {
     visibility: hidden;
     height: 100%;
 }
+
 #one {
     display: block;
     visibility: visible;
+}
+
+@media screen and (max-width: 480px) {
+    .galleryContainer {
+        height: 800px;
+        width: 100%;
+    }
 }
